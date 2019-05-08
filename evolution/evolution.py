@@ -10,7 +10,7 @@ class Generator:
 		self.expLambda = log(2)/2
 		self.ranking = ranking
 		if len(self.ranking) != n:
-			self.ranking.append(Player("random", None))
+			self.ranking.append(Player("random", [0, 0, 0, 0]))
 			for i in range(n-1):
 				intelligence = [gauss(0, 1), gauss(0, 1), gauss(0, 1), gauss(0, 1)]
 				self.ranking.append(Player(str(intelligence), intelligence))
