@@ -1,7 +1,6 @@
 import pickle
 import csv
 
-
 def save(ranking):
 	with open("ranking.pickle", "wb") as r:
 		pickle.dump(ranking[:32], r, pickle.HIGHEST_PROTOCOL)
@@ -31,3 +30,5 @@ def retrieve():
 		toID = pickle.load(n)
 
 	return ranking
+
+# TODO toID must be a global variable
